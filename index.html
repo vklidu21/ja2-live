@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JÁ² Live — Zjisti své skóre autenticity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Archivo:wght@800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>:root{--ocean-black:#0F1115;--card-fill:#1A1D23;--card-stroke:#33363C;--warm-ivory:#F4F0EA;--soft-stone:#A8A4A0;--conscious-yellow:#FFD400;--r-lg:21px;--r-md:14px}*{margin:0;padding:0;box-sizing:border-box}body{font-family:Inter,sans-serif;background:var(--ocean-black);color:var(--warm-ivory);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}.container{max-width:680px;width:100%}.eyebrow{font-family:Archivo,sans-serif;font-weight:800;font-size:14px;letter-spacing:.18em;text-transform:uppercase;color:var(--conscious-yellow);margin-bottom:24px;display:block}h1{font-family:Archivo,sans-serif;font-weight:900;font-size:64px;line-height:1.05;letter-spacing:-.025em;margin-bottom:24px}.lead{font-size:20px;color:var(--soft-stone);line-height:1.6;margin-bottom:48px}.highlight{background:var(--conscious-yellow);color:var(--ocean-black);padding:0 8px}.quiz-card{background:var(--card-fill);border:2px solid var(--card-stroke);border-radius:var(--r-lg);padding:48px}.question{margin-bottom:32px}.question-number{font-family:JetBrains Mono,monospace;font-size:14px;color:#6E6B68;margin-bottom:12px}.question-text{font-size:18px;font-weight:500;line-height:1.5;margin-bottom:24px}.options{display:flex;flex-direction:column;gap:12px}.option{background:transparent;border:1px solid var(--card-stroke);border-radius:var(--r-md);padding:16px 20px;color:var(--warm-ivory);font-family:Inter,sans-serif;font-size:15px;text-align:left;cursor:pointer;transition:all .12s ease}.option:hover{border-color:#4A4D54;background:rgba(244,240,234,.04)}.option:active{transform:scale(.98)}.hidden{display:none}.progress{height:2px;background:var(--card-stroke);margin-bottom:32px;border-radius:1px}.progress-bar{height:100%;background:var(--conscious-yellow);transition:width .22s ease;border-radius:1px}.email-form{margin-top:32px;padding-top:32px;border-top:1px dashed #3B3D42}.email-form input{width:100%;background:var(--ocean-black);border:1px solid var(--card-stroke);border-radius:var(--r-md);padding:16px 20px;color:var(--warm-ivory);font-size:16px;margin-bottom:16px}.email-form input:focus{outline:none;border-color:var(--conscious-yellow);box-shadow:0 0 0 3px rgba(255,212,0,.25)}.btn-yellow{width:100%;background:var(--conscious-yellow);color:var(--ocean-black);border:none;border-radius:var(--r-md);padding:18px 32px;font-family:Archivo,sans-serif;font-weight:800;font-size:16px;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;transition:all .12s ease}.btn-yellow:hover{background:#E6BE00}.btn-yellow:active{transform:scale(.98)}.footer-note{font-size:14px;color:#6E6B68;margin-top:24px;text-align:center}</style>
+</head>
+<body>
+    <div class="container">
+        <span class="eyebrow">JÁ² Live — 30.-31. května 2026</span>
+        <h1>Zjisti své <span class="highlight">skóre autenticity</span> ve věku AI</h1>
+        <p class="lead">Jak dobře dokážeš vystoupit z davu umělého obsahu a vyjádřit se originálně, autenticky a pravdivě? 5 otázek, 2 minuty, zdarma report.</p>
+        <div class="quiz-card">
+            <div class="progress"><div class="progress-bar" id="progress" style="width: 0%"></div></div>
+            <div id="quiz-container">
+                <div class="question active" data-q="1">
+                    <div class="question-number">01 — POZORNOST</div>
+                    <div class="question-text">Když přemýšlíš o svém obsahu v dnešní době, co cítíš nejvíc?</div>
+                    <div class="options">
+                        <button class="option" data-value="1">Pohřbívám své dary — bojím se projevit</button>
+                        <button class="option" data-value="2">Tvořím, ale nepřijde mi to "dostatečně unikátní"</button>
+                        <button class="option" data-value="3">Mám hlas, ale AI mi pomáhá být efektivnější</button>
+                        <button class="option" data-value="4">Jsem viděn/slyšen, moje značka rezonuje</button>
+                    </div>
+                </div>
+                <div class="email-form hidden" id="email-form">
+                    <div class="question-number">06 — VÝSLEDEK</div>
+                    <div class="question-text" style="margin-bottom: 24px;">Zadej svůj email a získej zdarma personalizovaný report.</div>
+                    <input type="email" id="email" placeholder="tvuj@email.cz" required>
+                    <button type="submit" class="btn-yellow" onclick="alert('Díky! Report bude odeslán.')">Získat report zdarma →</button>
+                </div>
+            </div>
+        </div>
+        <p class="footer-note">JÁ² Live — AI Creative Empire Summit | BVV Brno | 30.-31. května 2026</p>
+    </div>
+</body>
+</html>
